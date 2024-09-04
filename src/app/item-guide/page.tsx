@@ -7,7 +7,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const ItemGuide = () => {
 const itemRefs = useRef([]);
-const titleRef = useRef();
+const titleRef = useRef(null);
 const setRef =(element)=>{
     if(element && !itemRefs.current.includes(element)){
       itemRefs.current.push(element);

@@ -3,7 +3,7 @@ import React from 'react'
 import { useEffect,useRef } from 'react';
 import gsap from 'gsap';
 const BackGround = () => {
-  const titleRef = useRef();
+  const titleRef = useRef(null);
   useEffect(()=>{
  gsap.fromTo(
    titleRef.current,

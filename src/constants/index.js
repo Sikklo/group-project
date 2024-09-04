@@ -142,3 +142,26 @@ export const ProductInfo = [
     type: "c",
   },
 ];
+export const Horizontal_Section = [
+  {
+    title: "Quality",
+    subtitle:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam dignissimos, nemo corporis accusantium sit ipsam natus, culpa sed nostrum, neque sequi esse? Nostrum perferendis deleniti sed, aliquam magni iusto suscipit.",
+    BGImage: "/Quality.jpg",
+    color: "pink",
+  },
+  {
+    title: "Professional",
+    subtitle:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam dignissimos, nemo corporis accusantium sit ipsam natus, culpa sed nostrum, neque sequi esse? Nostrum perferendis deleniti sed, aliquam magni iusto suscipit.",
+    BGImage: "/pro.jpg",
+    color: "violet",
+  },
+  {
+    title: "Guarantee",
+    subtitle:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam dignissimos, nemo corporis accusantium sit ipsam natus, culpa sed nostrum, neque sequi esse? Nostrum perferendis deleniti sed, aliquam magni iusto suscipit.",
+    BGImage: "/Promise.jpg",
+    color: "blue",
+  },
+];

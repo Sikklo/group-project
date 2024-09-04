@@ -33,16 +33,15 @@ const TestRowScroll = () => {
           className="flex flex-row w-[300dvh] items-center gap-5 h-full"
         >
           {ProductInfo.map((item) => (
-            <div className='text-center'>
+            <div className="text-center" key={item.id}>
               <Image
-                key={item.id}
                 src={item.pic}
                 width={1000}
                 height={1000}
                 alt="pic"
-                className='w-full h-auto'
+                className="w-full h-auto"
               ></Image>
-              <p className='font-mono font-bold pt-5'>{item.name}</p>
+              <p className="font-mono font-bold pt-5">{item.name}</p>
             </div>
           ))}
         </div>

@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Products = () => {
   const homeImgRef = useRef([]);
   const homeTextRef = useRef([]);
-  const titleRef = useRef();
+  const titleRef = useRef(null);
   const setImgRef = (element:any) => {
       if (element && !homeImgRef.current.includes(element)) {
         homeImgRef.current.push(element);

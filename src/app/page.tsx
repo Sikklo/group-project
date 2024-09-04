@@ -1,8 +1,9 @@
 import Products from "@/sections/Products";
 import "./globals.css";
 import About from "@/sections/About";
-import TestRowScroll from "@/sections/TestRowSrcoll";
+import TestRowScroll from "@/sections/TestRowScroll";
 import BackGround from "@/sections/BackGround";
+import HorizontalScroll from "@/sections/HorizontalScroll";
 
 
 export default function Home() {
@@ -16,6 +17,9 @@ export default function Home() {
     </section>
     <section>
       <TestRowScroll/>
+    </section>
+    <section>
+      <HorizontalScroll/>
     </section>
     <section>
      <About/>
