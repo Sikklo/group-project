@@ -2,32 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.nav-header {
+  @apply w-full flex justify-center items-center font-mono bg-transparent  h-24 text-black font-bold;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.customBtn {
+  @apply border-2 py-2 px-5 rounded-full border-violet-300 mb-5 max-w-[10rem]  hover:px-7 hover:bg-violet-50 duration-300 mt-5;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.customPageImg {
+  @apply rounded-lg max-md:w-[300px] mt-10 border-2  border-violet-200 blur-[0.1px] hover:blur-0  hover:scale-105 max-w-[550px]
+            md:w-1/2  hover:shadow-md hover:shadow-black mr-10 ml-5;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.customItemImg {
+  @apply rounded-xl  blur-[0.1px] hover:blur-0  hover:scale-110  md:w-1/2  duration-500 p-2;
+}
+.flex-col-center {
+  @apply flex flex-col justify-center items-center;
 }
