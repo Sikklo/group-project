@@ -1,7 +1,8 @@
 "use client"
 import { ReactLenis, useLenis } from "lenis/react";
+import { ReactNode } from "react";
 
-function SmoothScroll({children}) {
+function SmoothScroll({ children }: { children: ReactNode }) {
   
 
   return <ReactLenis root options={{
