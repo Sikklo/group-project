@@ -20,7 +20,6 @@ const HorizontalToLeft = () => {
         ease:'none',
         scrollTrigger:{
           trigger:trigger.current,
-          markers:true,
           scrub:1,
           pin:true,
         }
