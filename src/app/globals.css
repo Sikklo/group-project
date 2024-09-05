@@ -18,3 +18,9 @@
 .flex-col-center {
   @apply flex flex-col justify-center items-center;
 }
+.title {
+  @apply text-4xl text-orange-300 font-bold;
+}
+.subtitle {
+  @apply text-sm text-black;
+}

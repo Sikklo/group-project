@@ -165,3 +165,21 @@ export const Horizontal_Section = [
     color: "blue",
   },
 ];
+
+export const C_HorizontalToLeft = [
+  {
+    title: "Unlock the Future, One Innovation at a Time",
+    subtitle:
+      "Discover cutting-edge solutions designed to transform how we live, work, and connect.",
+  },
+  {
+    title: "Empowering Ideas to Drive Global Change",
+    subtitle:
+      "Where bold ideas meet practical innovation to create a better tomorrow.",
+  },
+  {
+    title: "Transforming Visions into Reality",
+    subtitle:
+      "Leading with passion and purpose to shape a future filled with endless possibilities.",
+  },
+];

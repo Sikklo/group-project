@@ -39,7 +39,7 @@ const Products = () => {
     xPercent: 200,
     opacity: 0,
   });
-//先拿到我需要的DOM 
+
 
   homeImgRef.current.forEach((img)=>{
     gsap.to(img, {

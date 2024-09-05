@@ -6,9 +6,9 @@ import { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const ItemGuide = () => {
-const itemRefs = useRef([]);
+const itemRefs = useRef<HTMLDivElement[]>([]);
 const titleRef = useRef(null);
-const setRef =(element)=>{
+const setRef =(element: HTMLDivElement | null)=>{
     if(element && !itemRefs.current.includes(element)){
       itemRefs.current.push(element);
     }
