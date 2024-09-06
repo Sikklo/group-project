@@ -12,12 +12,12 @@ const Products = () => {
   const homeImgRef = useRef([]);
   const homeTextRef = useRef([]);
   const titleRef = useRef(null);
-  const setImgRef = (element:any) => {
+  const setImgRef = (element) => {
       if (element && !homeImgRef.current.includes(element)) {
         homeImgRef.current.push(element);
       }
     };
-  const setTextRef = (element:any) => {
+  const setTextRef = (element) => {
       if (element && !homeTextRef.current.includes(element)) {
         homeTextRef.current.push(element);
       }
