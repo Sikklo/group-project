@@ -27,7 +27,7 @@ const TestRowScroll = () => {
        start: "top 20%",
        end: "30% top",
        scrub: true,
-       markers:true,
+      
      },
    }
  );
