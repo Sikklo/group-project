@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-gradient-to-r from-red-100 to-transparent`}>
         <SmoothScroll>
           <Nav />
           {children}

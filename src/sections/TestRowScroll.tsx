@@ -9,28 +9,38 @@ gsap.registerPlugin(ScrollTrigger);
 const TestRowScroll = () => {
   const triggerRef = useRef(null);
   const sectionRef = useRef(null);
+ 
  useEffect(() => {
- gsap.fromTo(sectionRef.current,{
-  xPercent:0,
- },{
-  xPercent:-43,
-  duration:1,
-  ease:'none',
-  scrollTrigger:{
-    trigger:triggerRef.current,
-    start:'20% 40%',
-    end:"950 70%",
-    scrub:true,
+   let sectionWidth = sectionRef.current.offsetWidth;
+   let scrollToEnd = sectionWidth - window.innerWidth;
+ gsap.fromTo(
+   sectionRef.current,
+   {
+     x: 0,
+   },
+   {
+     x: -scrollToEnd,
+     duration: 1,
+     ease: "none",
+     scrollTrigger: {
+       trigger: triggerRef.current,
+       start: "top 20%",
+       end: "30% top",
+       scrub: true,
+       markers:true,
+     },
+   }
+ );
+  return ()=>{
+    ScrollTrigger.getAll().pop();
   }
- })
-  
  }, []);
   return (
     <section className="overflow-x-hidden h-[100dvh]">
       <div ref={triggerRef} className="h-full">
         <div
           ref={sectionRef}
-          className="flex flex-row w-[300dvh] items-center gap-5 h-full"
+          className="flex flex-row w-[300dvh] items-center gap-5 h-full max-md:w-[200dvh]"
         >
           {ProductInfo.map((item) => (
             <div className="text-center" key={item.id}>

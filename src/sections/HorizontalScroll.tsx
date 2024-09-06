@@ -50,20 +50,31 @@ return () => {
           {Horizontal_Section.map((info) => (
             <div
               key={info.title}
-              className={`group h-[100%] flex flex-col items-center justify-center w-[100vw] object-cover`}
+              className={`group h-[100%] flex flex-col items-center justify-center w-[100vw] object-cover
+                relative max-md:mr-10`}
             >
               <Image
                 src={info.BGImage}
                 width={1000}
                 height={500}
                 alt="pic"
-                className="relative w-8/12 rounded-xl filter blur-[1px] hover:blur-none duration-500"
+                className="w-8/12 rounded-xl filter blur-[1px] hover:blur-none duration-500 max-md:w-full
+                "
               ></Image>
-              <div className="absolute bg-gradient-to-r flex flex-col justify-center items-center from-black duration-500 px-10 py-10 rounded-md  group-hover:backdrop-brightness-50">
-                <h2 className="font-bold font-mono text-[9rem] text-green-200 leading-[9rem]">
+              <div
+                className="absolute bg-gradient-to-r flex flex-col justify-center items-center from-black duration-500 px-10 py-10 rounded-md  group-hover:backdrop-brightness-50
+               max-md:py-10
+              "
+              >
+                <h2
+                  className="font-bold font-mono text-[9rem] text-green-200 leading-[9rem] max-md:text-[4rem] 
+                max-md:leading-[2rem]
+                "
+                >
                   {info.title}
                 </h2>
-                <p className="max-w-2xl text-white group-hover:max-w-4xl group-hover:text-yellow-300 group-hover:font-bold duration-500 leading-10">
+                <p className="max-w-2xl text-white group-hover:max-w-4xl group-hover:text-yellow-300 group-hover:font-bold duration-500 leading-10
+                max-md:lea">
                   {info.subtitle}
                 </p>
               </div>

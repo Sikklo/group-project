@@ -106,7 +106,7 @@ const Products = () => {
           ></Image>
           <div className=" max-w-xl max-md:text-center" ref={setTextRef}>
             <h2 className="text-[3rem] font-bold mb-3 max-md:text-[2.5rem] max-w-2xl text-violet-400">
-              <p>
+              <p className="relative">
                 <span className="text-blue-300">{product.styleWord} </span>
                 {product.name}
                 <Image
@@ -114,7 +114,7 @@ const Products = () => {
                   width={20}
                   height={20}
                   alt="icon"
-                  className="animate-bounce"
+                  className="animate-bounce absolute top-[-10px] left-[7px] max-md:right-[50%] max-md:top-[95%] "
                 ></Image>
               </p>
             </h2>
